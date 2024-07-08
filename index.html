@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="form-container">
+            <h2><b>Registro</b></h2>
+            <form id="user-form">
+                <label for="name" class="nombre">Nombre:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email" class="correo">Correo electronico:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <button type="submit" class="subir"> Enviar </button>
+            </form>
+        </div>
+
+        <div id="display-container" style="display: none;" class="inicio">
+            <div class="uno">
+                <img src="https://github.com/marelinguzman/img_repositorio/blob/main/usuario.jpeg?raw=true" class="usuario">
+            </div>
+            <div class="dos">  
+                <p class="inicio_nombre"> <span id="display-name"></span></p>
+                <p class="inicio_correo"> <span id="display-email"></span></p>
+            </div>
+
+            <div class="tres">
+                <h1><b>Asignaciones</b></h1>
+                <p>Debes de color tus deberes aquí</p>
+                <div class="asignaciones">
+                    <input type="text" placeholder="Asigancion 1" class="asigancion_uno">
+                    <input type="text" placeholder="Asigancion 2" class="asigancion_dos">
+                    <input type="text" placeholder="Asigancion 3" class="asigancion_tres">
+                </div>
+
+                    <button class="mas">+</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
